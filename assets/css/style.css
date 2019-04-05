@@ -1,11 +1,76 @@
 @font-face {
   font-family: "YesevaOne";
-  src: url(../fonts/YesevaOne_Regular); }
+  src: url(../fonts/YesevaOne_Regular.otf); }
 @font-face {
   font-family: "Lato";
-  src: url(../fonts/Lato_Regular); }
+  src: url(../fonts/Lato_Regular.otf); }
 @font-face {
   font-family: "OpenSans";
-  src: url(../fonts/OpenSans_Regular); }
+  src: url(../fonts/OpenSans_Regular.otf); }
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+  body #social_icons ul {
+    list-style-type: none;
+    text-decoration: none; }
+  body header {
+    background-image: url("../pictures/bg_header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; }
+    body header #back_header {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)); }
+      body header #back_header nav {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        justify-content: space-around; }
+        body header #back_header nav #navbar ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          list-style-type: none; }
+          body header #back_header nav #navbar ul li {
+            margin-right: 10px;
+            margin-left: 10px; }
+            body header #back_header nav #navbar ul li a {
+              text-decoration: none;
+              color: white;
+              font-family: "Gentium Book Basic";
+              font-size: 21px;
+              font-weight: 700; }
+            body header #back_header nav #navbar ul li .socials_icons {
+              color: #dab33e; }
+    body header #presentation {
+      text-align: center;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      body header #presentation h1 {
+        font-family: "YesevaOne";
+        font-size: 90px;
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 2px black; }
+      body header #presentation #divider1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+      body header #presentation .booking {
+        margin-right: 15px;
+        padding: 15px 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid black;
+        color: white; }
+      body header #presentation .menu {
+        margin-left: 15px;
+        padding: 15px 30px;
+        color: white;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.5); }
 
 /*# sourceMappingURL=style.css.map */
