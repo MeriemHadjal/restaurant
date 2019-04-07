@@ -183,7 +183,8 @@ body {
     width: 100vw;
     height: 100vh; }
     body #right_food #right_food_pic {
-      display: flex;
-      justify-content: space-between; }
+      width: 50%;
+      margin-right: 10px;
+      margin-left: 10px; }
 
 /*# sourceMappingURL=style.css.map */
