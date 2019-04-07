@@ -14,6 +14,20 @@
     font-family: "OpenSans";
     src: url(../fonts/OpenSans_Regular.otf)
 }
+
+/*@media only screen and (max-width: 600px){ }
+@media only screen and (min-width: 600px){}
+@media only screen and (min-width : 768px){}
+@media only screen and (min-width : 992px){}
+@media only screen and (min-width: 1200px){}
+
+    
+@media only screen and (orientaion: landscape){
+        body{ 
+            background-color: lightblue;
+        }
+}*/
+
 body{
     width:100vw;
     height:100vh;
@@ -30,9 +44,11 @@ body{
     header {
         background-image: url("../pictures/bg_header.jpg");
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size:cover; //100% 100% voir pour le responsive
         width: 100vw;
         height: 100vh;
+        //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
+        //height:auto *
 
         #back_header{
                     background: linear-gradient(0deg,rgba(255,255,255,0),rgba(0,0,0,0.5));                
@@ -74,7 +90,6 @@ body{
         }
 
             #presentation{
-               
                 text-align:center;
                 padding-left:10%;
                 padding-right:10%;
@@ -91,28 +106,163 @@ body{
                     display: block;
                     margin-left:auto;
                     margin-right: auto;
+                    padding-top:15px;
+                    padding-bottom:60px;
                 }
                 
                 .booking{
-                    margin-right:15px;
+                    margin-right:30px;
                     padding:15px 30px;
                     background-color:rgba(0,0,0,0.5);
                     border:1px solid black;
                     color:white;
+                    font-family:"Lato";
+                    font-size:18px;
+
                     
                 }
                 .menu{
-                    margin-left:15px;
-                    padding:15px 30px;
+                    margin-right:20px;
+                    padding:/*15px*/ 30px;
                     color:white;
                     border:1px solid white;
                     background-color:rgba(255,255,255,0.5);
+                    font-family:"Lato";
+                    font-size:18px;
                 }
             }
-
-
-
-
-
+    }
+            #about{
+                background-image: url(../pictures/pattern_right_food.png);
+                background-repeat: no-repeat;
+                background-size:cover; //100% 100% voir pour le responsive
+                width: 100vw;
+                height: 100vh;
+                //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
+                //height:auto *
+            }
+            #cook{
+                width:50vw;
+                h2{
+                    color:orange;
+                    font-family:"YesevaOne";
+                    font-size: 36px;
+                    text-align: center;
+                }
+            #divider2{
+                display: block;
+                margin-left:auto;
+                margin-right: auto;
+                padding-top:15px;
+            }    
+            P{
+                font-family:"Lato";
+                font-size:16px;
+                color:black;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                padding-right:30px;
+            }
+            #chef{
+                display:flex;
+                justify-content:center;
+            }
         }
+            #plate{
+                display:flex;
+                justify-content:center;
+                width:50vw;
+            }
+            
+            #ingredient{
+                background-image: url(../pictures/bg_ingredient.jpg);
+                background-repeat: no-repeat;
+                background-size:cover; //100% 100% voir pour le responsive
+                width: 100vw;
+                height: 100vh;
+                //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
+                //height:auto *
+            
+            #fine_ingredients{
+                
+                h2{
+                    color:white;
+                    font-family: "YesevOne";
+                    font-size: 36px;
+                    text-align: center;
+                }
+                #divider_3{
+                    display: block;
+                    margin-left:auto;
+                    margin-right: auto;
+                    padding-top:15px;
+                }
+                p{
+                    color:white;
+                    font-size: 16px;
+                    font-family: "Lato";
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:center;
+                    padding-right:30px;
+                }
+                #img_ingredient{
+                    display:flex;
+                    justify-content:space-between;
+                }
+            }
+        }
+        #rewiews{
+            background-image: url(../pictures/bg_reviews.jpg);
+            background-repeat: no-repeat;
+            background-size:cover; //100% 100% voir pour le responsive
+            width: 100vw;
+            height: 100vh;
+            //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
+            //height:auto *
+            #slate_plate{
+                opacity: 0.6;
+            }
+            h2{
+                font-family:"YesevaOne";
+                font-size:36px;
+                color:white;
+                text-align: center;
+            }
+            #divider_4{
+                display: block;
+                margin-left:auto;
+                margin-right: auto;
+                padding-top:15px;
+            }
+            p{
+                font-family: "Gentium Book Basic";
+                font-size:36px;
+                color:white;
+                text-align: center;
+            }
+            .city{
+                font-family: "Lato";
+                font-size:18px;
+            }
+        }
+        #right_food{
+            background-image: url(../pictures/pattern_right_food.png);
+            background-repeat: no-repeat;
+            background-size:cover; //100% 100% voir pour le responsive
+            width: 100vw;
+            height: 100vh;
+            //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
+            //height:auto 
+        
+        #right_food_pic{
+            
+            margin-right:10px;
+            margin-left:10px;
+        }
+        #reservation{
+            
+        }
+    }
     }

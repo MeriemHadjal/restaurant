@@ -7,6 +7,18 @@
 @font-face {
   font-family: "OpenSans";
   src: url(../fonts/OpenSans_Regular.otf); }
+/*@media only screen and (max-width: 600px){ }
+@media only screen and (min-width: 600px){}
+@media only screen and (min-width : 768px){}
+@media only screen and (min-width : 992px){}
+@media only screen and (min-width: 1200px){}
+
+    
+@media only screen and (orientaion: landscape){
+        body{ 
+            background-color: lightblue;
+        }
+}*/
 body {
   width: 100vw;
   height: 100vh;
@@ -59,18 +71,119 @@ body {
       body header #presentation #divider1 {
         display: block;
         margin-left: auto;
-        margin-right: auto; }
+        margin-right: auto;
+        padding-top: 15px;
+        padding-bottom: 60px; }
       body header #presentation .booking {
-        margin-right: 15px;
+        margin-right: 30px;
         padding: 15px 30px;
         background-color: rgba(0, 0, 0, 0.5);
         border: 1px solid black;
-        color: white; }
+        color: white;
+        font-family: "Lato";
+        font-size: 18px; }
       body header #presentation .menu {
-        margin-left: 15px;
-        padding: 15px 30px;
+        margin-right: 20px;
+        padding: 30px;
         color: white;
         border: 1px solid white;
-        background-color: rgba(255, 255, 255, 0.5); }
+        background-color: rgba(255, 255, 255, 0.5);
+        font-family: "Lato";
+        font-size: 18px; }
+  body #about {
+    background-image: url(../pictures/pattern_right_food.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; }
+  body #cook {
+    width: 50vw; }
+    body #cook h2 {
+      color: orange;
+      font-family: "YesevaOne";
+      font-size: 36px;
+      text-align: center; }
+    body #cook #divider2 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 15px; }
+    body #cook P {
+      font-family: "Lato";
+      font-size: 16px;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 30px; }
+    body #cook #chef {
+      display: flex;
+      justify-content: center; }
+  body #plate {
+    display: flex;
+    justify-content: center;
+    width: 50vw; }
+  body #ingredient {
+    background-image: url(../pictures/bg_ingredient.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; }
+    body #ingredient #fine_ingredients h2 {
+      color: white;
+      font-family: "YesevOne";
+      font-size: 36px;
+      text-align: center; }
+    body #ingredient #fine_ingredients #divider_3 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 15px; }
+    body #ingredient #fine_ingredients p {
+      color: white;
+      font-size: 16px;
+      font-family: "Lato";
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 30px; }
+    body #ingredient #fine_ingredients #img_ingredient {
+      display: flex;
+      justify-content: space-between; }
+  body #rewiews {
+    background-image: url(../pictures/bg_reviews.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; }
+    body #rewiews #slate_plate {
+      opacity: 0.6; }
+    body #rewiews h2 {
+      font-family: "YesevaOne";
+      font-size: 36px;
+      color: white;
+      text-align: center; }
+    body #rewiews #divider_4 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 15px; }
+    body #rewiews p {
+      font-family: "Gentium Book Basic";
+      font-size: 36px;
+      color: white;
+      text-align: center; }
+    body #rewiews .city {
+      font-family: "Lato";
+      font-size: 18px; }
+  body #right_food {
+    background-image: url(../pictures/pattern_right_food.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; }
+    body #right_food #right_food_pic {
+      display: flex;
+      justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */
