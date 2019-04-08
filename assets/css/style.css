@@ -20,8 +20,6 @@
         }
 }*/
 body {
-  width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0; }
   body #social_icons ul {
@@ -31,8 +29,7 @@ body {
     background-image: url("../pictures/bg_header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh; }
+    min-height: 750px; }
     body header #back_header {
       background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)); }
       body header #back_header nav {
@@ -73,7 +70,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         padding-top: 15px;
-        padding-bottom: 60px; }
+        padding-bottom: 20px; }
       body header #presentation .booking {
         margin-right: 30px;
         padding: 15px 30px;
@@ -84,7 +81,7 @@ body {
         font-size: 18px; }
       body header #presentation .menu {
         margin-right: 20px;
-        padding: 30px;
+        padding: 15px 30px;
         color: white;
         border: 1px solid white;
         background-color: rgba(255, 255, 255, 0.5);
@@ -95,34 +92,43 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 100vh; }
-  body #cook {
-    width: 50vw; }
-    body #cook h2 {
-      color: orange;
-      font-family: "YesevaOne";
-      font-size: 36px;
-      text-align: center; }
-    body #cook #divider2 {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 15px; }
-    body #cook P {
-      font-family: "Lato";
-      font-size: 16px;
-      color: black;
+    min-height: 750px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    body #about #cook {
+      width: 50%;
+      min-height: 580px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding-right: 30px; }
-    body #cook #chef {
-      display: flex;
+      align-items: center;
       justify-content: center; }
-  body #plate {
-    display: flex;
-    justify-content: center;
-    width: 50vw; }
+      body #about #cook h2 {
+        color: orange;
+        font-family: "YesevaOne";
+        font-size: 36px;
+        text-align: center; }
+      body #about #cook #divider2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px; }
+      body #about #cook P {
+        font-family: "Lato";
+        font-size: 16px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 30px; }
+      body #about #cook #chef {
+        display: flex;
+        justify-content: center; }
+    body #about #plate {
+      display: flex;
+      justify-content: center;
+      width: 50%; }
   body #ingredient {
     background-image: url(../pictures/bg_ingredient.jpg);
     background-repeat: no-repeat;

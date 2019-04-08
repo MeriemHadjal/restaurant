@@ -29,8 +29,8 @@
 }*/
 
 body{
-    width:100vw;
-    height:100vh;
+    // width:100vw;
+    // height:100vh;
     margin:0;
     padding:0;
 
@@ -45,10 +45,11 @@ body{
         background-image: url("../pictures/bg_header.jpg");
         background-repeat: no-repeat;
         background-size:cover; //100% 100% voir pour le responsive
-        width: 100vw;
-        height: 100vh;
+        // width: 100vw;
+        // height: 100vh;
         //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
         //height:auto *
+        min-height: 750px;
 
         #back_header{
                     background: linear-gradient(0deg,rgba(255,255,255,0),rgba(0,0,0,0.5));                
@@ -107,7 +108,7 @@ body{
                     margin-left:auto;
                     margin-right: auto;
                     padding-top:15px;
-                    padding-bottom:60px;
+                    padding-bottom:20px;
                 }
                 
                 .booking{
@@ -123,7 +124,7 @@ body{
                 }
                 .menu{
                     margin-right:20px;
-                    padding:/*15px*/ 30px;
+                    padding:15px 30px;
                     color:white;
                     border:1px solid white;
                     background-color:rgba(255,255,255,0.5);
@@ -137,12 +138,23 @@ body{
                 background-repeat: no-repeat;
                 background-size:cover; //100% 100% voir pour le responsive
                 width: 100vw;
-                height: 100vh;
+                min-height: 750px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                // height: 100vh;
+
                 //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
                 //height:auto *
-            }
+           
             #cook{
-                width:50vw;
+                width:50%;
+                min-height: 580px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 h2{
                     color:orange;
                     font-family:"YesevaOne";
@@ -172,9 +184,9 @@ body{
             #plate{
                 display:flex;
                 justify-content:center;
-                width:50vw;
+                width:50%;
             }
-            
+        }
             #ingredient{
                 background-image: url(../pictures/bg_ingredient.jpg);
                 background-repeat: no-repeat;
