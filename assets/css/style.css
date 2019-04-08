@@ -29,9 +29,12 @@ body {
     background-image: url("../pictures/bg_header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
     min-height: 750px; }
     body header #back_header {
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)); }
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+      position: fixed;
+      width: 100vw; }
       body header #back_header nav {
         margin-left: 10%;
         margin-right: 10%;
@@ -94,26 +97,27 @@ body {
     width: 100vw;
     min-height: 750px;
     display: flex;
+    /*dans chaque grande section*/
     flex-direction: row;
+    /*dans chaque grande section*/
     align-items: center;
-    justify-content: center; }
+    /*dans chaque grande section*/
+    justify-content: center;
+    /*dans chaque grande section*/ }
     body #about #cook {
-      width: 50%;
-      min-height: 580px;
+      width: 40%;
+      min-height: 550px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; }
+      justify-content: space-between; }
       body #about #cook h2 {
-        color: orange;
+        color: #ca992c;
         font-family: "YesevaOne";
         font-size: 36px;
         text-align: center; }
       body #about #cook #divider2 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 15px; }
+        display: block; }
       body #about #cook P {
         font-family: "Lato";
         font-size: 16px;
@@ -121,76 +125,117 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 30px; }
+        width: 50%;
+        text-align: center; }
       body #about #cook #chef {
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        padding-left: 10%; }
     body #about #plate {
       display: flex;
       justify-content: center;
-      width: 50%; }
+      width: 40%; }
   body #ingredient {
     background-image: url(../pictures/bg_ingredient.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 100vh; }
-    body #ingredient #fine_ingredients h2 {
-      color: white;
-      font-family: "YesevOne";
-      font-size: 36px;
-      text-align: center; }
-    body #ingredient #fine_ingredients #divider_3 {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 15px; }
-    body #ingredient #fine_ingredients p {
-      color: white;
-      font-size: 16px;
-      font-family: "Lato";
+    height: 100vh;
+    display: flex;
+    /*dans chaque grande section*/
+    flex-direction: row;
+    /*dans chaque grande section*/
+    align-items: center;
+    /*dans chaque grande section*/
+    justify-content: center;
+    /*dans chaque grande section*/ }
+    body #ingredient #help {
+      width: 750px; }
+    body #ingredient #fine_ingredients {
+      background-color: rgba(0, 0, 0, 0.5);
+      min-height: 557px;
+      width: 570px;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      padding-right: 30px; }
-    body #ingredient #fine_ingredients #img_ingredient {
-      display: flex;
-      justify-content: space-between; }
-  body #rewiews {
-    background-image: url(../pictures/bg_reviews.jpg);
+      flex-direction: column; }
+      body #ingredient #fine_ingredients h2 {
+        color: white;
+        font-family: "YesevOne";
+        font-size: 36px;
+        text-align: center; }
+      body #ingredient #fine_ingredients #divider_3 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5%; }
+      body #ingredient #fine_ingredients p {
+        color: white;
+        font-size: 16px;
+        font-family: "Lato";
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%; }
+      body #ingredient #fine_ingredients #img_ingredient {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-bottom: 10%;
+        width: 90%; }
+
+#reviews {
+  background-image: url("../pictures/bg_reviews.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  /*dans chaque grande section*/
+  align-items: center;
+  /*dans chaque grande section*/
+  justify-content: center;
+  /*dans chaque grande section*/ }
+  #reviews #bg_slate_plate {
+    background-image: url("../pictures/test.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh; }
-    body #rewiews #slate_plate {
-      opacity: 0.6; }
-    body #rewiews h2 {
+    width: 50%;
+    justify-content: center;
+    padding: 4%; }
+    #reviews #bg_slate_plate h2 {
       font-family: "YesevaOne";
       font-size: 36px;
       color: white;
       text-align: center; }
-    body #rewiews #divider_4 {
+    #reviews #bg_slate_plate #divider_4 {
       display: block;
       margin-left: auto;
       margin-right: auto;
       padding-top: 15px; }
-    body #rewiews p {
+    #reviews #bg_slate_plate #guillemet:before {
+      content: url(../pictures/guillemet.png);
+      margin-right: 3%; }
+    #reviews #bg_slate_plate p {
       font-family: "Gentium Book Basic";
       font-size: 36px;
       color: white;
       text-align: center; }
-    body #rewiews .city {
+    #reviews #bg_slate_plate .city {
       font-family: "Lato";
-      font-size: 18px; }
-  body #right_food {
-    background-image: url(../pictures/pattern_right_food.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh; }
-    body #right_food #right_food_pic {
-      width: 50%;
-      margin-right: 10px;
-      margin-left: 10px; }
+      font-size: 18px;
+      text-align: center; }
+
+#right_food {
+  background-image: url(../pictures/pattern_right_food.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh; }
+  #right_food #right_food_pic {
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px; }
 
 /*# sourceMappingURL=style.css.map */

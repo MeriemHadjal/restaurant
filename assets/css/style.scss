@@ -45,7 +45,7 @@ body{
         background-image: url("../pictures/bg_header.jpg");
         background-repeat: no-repeat;
         background-size:cover; //100% 100% voir pour le responsive
-        // width: 100vw;
+        width: 100vw;
         // height: 100vh;
         //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
         //height:auto *
@@ -53,7 +53,9 @@ body{
 
         #back_header{
                     background: linear-gradient(0deg,rgba(255,255,255,0),rgba(0,0,0,0.5));                
-
+                    //z-index:1; //entre le background et l'image
+                    position:fixed;
+                    width: 100vw;
             nav {
                 margin-left: 10%;
                 margin-right: 10%;
@@ -139,53 +141,71 @@ body{
                 background-size:cover; //100% 100% voir pour le responsive
                 width: 100vw;
                 min-height: 750px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
+                display: flex; /*dans chaque grande section*/
+                flex-direction: row; /*dans chaque grande section*/
+                align-items: center; /*dans chaque grande section*/
+                justify-content: center; /*dans chaque grande section*/
                 // height: 100vh;
 
                 //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
                 //height:auto *
-           
-            #cook{
-                width:50%;
-                min-height: 580px;
+                // padding: 0 10%;
+                // border: 2px solid yellow;
+               
+                // #help2{
+                // min-height: 700px;
+                // border: 1px solid pink;
+                // display: flex;
+                // flex-direction: row;
+
+                
+                #cook{
+                width:40%;
+                min-height: 550px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                h2{
-                    color:orange;
+                justify-content: space-between;
+                // margin-left:15%;
+
+                    h2{
+                    color:rgb(202,153,44);
                     font-family:"YesevaOne";
                     font-size: 36px;
                     text-align: center;
-                }
-            #divider2{
-                display: block;
-                margin-left:auto;
-                margin-right: auto;
-                padding-top:15px;
-            }    
-            P{
-                font-family:"Lato";
-                font-size:16px;
-                color:black;
-                display:flex;
-                flex-direction:column;
-                justify-content:center;
-                padding-right:30px;
+                    
+                    }
+                    #divider2{
+                    display: block;
+                    }   
+
+                    P{
+                    font-family:"Lato";
+                    font-size:16px;
+                    color:black;
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:center;
+                    //padding:30px;
+                    // padding-left:25%;
+                    //padding-right:25%;
+                    width: 50%;
+                    text-align: center;
             }
-            #chef{
+                    #chef{
                 display:flex;
                 justify-content:center;
+                padding-left:10%;
+
             }
         }
-            #plate{
+                    #plate{
                 display:flex;
                 justify-content:center;
-                width:50%;
+                width:40%;
+                // margin-right:15%;
             }
+        // }
         }
             #ingredient{
                 background-image: url(../pictures/bg_ingredient.jpg);
@@ -195,10 +215,25 @@ body{
                 height: 100vh;
                 //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
                 //height:auto *
+                display: flex; /*dans chaque grande section*/
+                flex-direction: row; /*dans chaque grande section*/
+                align-items: center; /*dans chaque grande section*/
+                justify-content: center; /*dans chaque grande section*/
+
+            #help{
+                    width:750px;
+                }
             
             #fine_ingredients{
-                
-                h2{
+                    background-color:rgba(0,0,0,0.5);
+                    min-height:557px;
+                    width:570px;
+                    //margin-left:50%;
+                    display:flex;
+                    justify-content:center;
+                    flex-direction:column;
+                    
+                    h2{
                     color:white;
                     font-family: "YesevOne";
                     font-size: 36px;
@@ -208,34 +243,49 @@ body{
                     display: block;
                     margin-left:auto;
                     margin-right: auto;
-                    padding-top:15px;
+                    padding-bottom: 5%;
                 }
                 p{
                     color:white;
-                    font-size: 16px;
+                    font-size:16px;
                     font-family: "Lato";
-                    display:flex;
-                    flex-direction:column;
-                    justify-content:center;
-                    padding-right:30px;
+                    text-align:center;
+                    padding-right:15%;
+                    padding-left: 15%;
                 }
                 #img_ingredient{
                     display:flex;
-                    justify-content:space-between;
+                    justify-content:space-around;
+                    flex-direction: row;
+                    padding-top: 10%;
+                    padding-left:5%;
+                    padding-bottom: 10%;
+                    width:90%;
                 }
             }
         }
-        #rewiews{
-            background-image: url(../pictures/bg_reviews.jpg);
+        }
+        #reviews{
+            background-image: url("../pictures/bg_reviews.jpg");
             background-repeat: no-repeat;
             background-size:cover; //100% 100% voir pour le responsive
             width: 100vw;
             height: 100vh;
             //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
             //height:auto *
-            #slate_plate{
-                opacity: 0.6;
-            }
+            display: flex; //dans chaque grande section
+            flex-direction: row; /*dans chaque grande section*/
+            align-items: center; /*dans chaque grande section*/
+            justify-content: center; /*dans chaque grande section*/
+
+            #bg_slate_plate{
+                background-image: url("../pictures/test.png"); 
+                background-repeat:no-repeat;
+                background-size: cover;
+                width:50%;
+                justify-content:center;
+                padding:4%;
+
             h2{
                 font-family:"YesevaOne";
                 font-size:36px;
@@ -248,16 +298,25 @@ body{
                 margin-right: auto;
                 padding-top:15px;
             }
-            p{
+           
+            #guillemet:before{
+                content: url(../pictures/guillemet.png);
+                margin-right:3%;
+            }
+
+            p {
                 font-family: "Gentium Book Basic";
                 font-size:36px;
                 color:white;
                 text-align: center;
             }
+           
             .city{
                 font-family: "Lato";
                 font-size:18px;
+                text-align: center;
             }
+        }
         }
         #right_food{
             background-image: url(../pictures/pattern_right_food.png);
@@ -277,4 +336,4 @@ body{
             
         }
     }
-    }
+    

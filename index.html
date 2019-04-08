@@ -33,6 +33,7 @@
     <!-- *********************balise liaison avec SCSS********************************* -->
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
 
 <body>
 
@@ -55,6 +56,7 @@
                         <li><a class="socials_icons" href="#https://twitter.com/lambda_restaurant" target="_blanc"><i class="fab fa-twitter"></i></a></li>
                         <li><a class="socials_icons" href="#https://youtube.com/lambda_restaurant" target="_blanc"><i class="fab fa-youtube"></i></a></li>
                         <li><a class="socials_icons" href="#https://facebook.com/lambda_restaurant" target="_blanc"><i class="fab fa-facebook"></i></a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -68,10 +70,11 @@
 
     <main>
         <section id="about">
+            <!-- <div id="help2"> -->
             <div id="cook">
                 <h2>Just the right food</h2>
                 <img id="divider2" alt="arabesque" src="assets/pictures/divider_orange.png" width="247px" height="24px">
-                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted
+                <p>If you’ve been to one of our restaurants, you’ve seen and tasted
                 – what keeps our customers coming back for more. <br>
                 Perfect materials and freshly baked food, delicious Lambda cakes,
                 muffins, and gourmet coffees make us hard to resist!<br> 
@@ -79,11 +82,13 @@
                 <img id="chef" alt="chef_picture" src="assets/pictures/chef.png" width="219px" heigh="221px">
             </div>
             <div id="plate">
-                <img alt="plate_picture" src="assets/pictures/assiette.png" width="621px" height="625px">
+                <img alt="plate_picture" src="assets/pictures/dish.png" width="621px" height="625px">
             </div>
+        <!-- </div> -->
         </section>
 
-        <section id="ingredient"></section>
+        <section id="ingredient">
+            <div id="help"></div>
             <div id="fine_ingredients">
                 <h2>Fine ingredients</h2>
                 <img id="divider_3" alt="arabesque" src="assets/pictures/divider_white.png" width="247px" height="24px">
@@ -92,28 +97,26 @@
                 Perfect materials and freshly baked food, delicious Lambda cakes,
                 muffins, and gourmet coffees make us hard to resist!<br> 
                 Stop in today and check us out!</p>
-            </div>
-
+            
             <div id="img_ingredient">
                 <img alt="ears_of_corns" src="assets/pictures/img_ingredient_1.png"width="110px" height="110px">
                 <img alt="paprika" src="assets/pictures/img_ingredient_2.png"width="110px" height="110px">
                 <img alt="bread" src="assets/pictures/img_ingredient_3.png"width="110px" height="110px">
             </div>
+        </div>
         </section>
 
         <section id="reviews">
-            <div>
-                <img id="slate_plate" alt="slate_plate" src="assets/pictures/slate_plate.jpg"width="770px" height="557px">
+            <div id="bg_slate_plate">
                 <h2>Guest Reviews</h2>
                 <img id="divider_4" alt="arabesque" src="assets/pictures/divider_white.png" width="247px" height="24px">
-                <img id="guillemet" alt="guillemet" src="assets/pictures/guillemet.png" width="32px" height="25px">
-                <p>If you’ve been to one of our restaurants, you’ve seen – and<br>
-                tasted – what keeps our customers coming back for more.<br>
-                Perfect materials and freshly baked food, delicious Lambda<br>
+                <p id="guillemet">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more.<br>
+                Perfect materials and freshly baked food, delicious Lambda
                 cakes,  muffins, and gourmet coffees make us hard to resist!<br>
                 Stop in today and check us out!</p>
                 <p class="city">- food inc, New York</p>
             </div>
+        </div>
         </section>
 
         <section id="right_food">
@@ -131,17 +134,17 @@
             <form id="name_date">
                 <p>
                     <label for="name">Name</label> <br> 
-                    <input type="text" name="name" id="your_name" placeholder="your name*" size="30" maxlength="10"></input><br>
+                    <input type="text" name="name" id="your_name" placeholder="your name*" size="30" maxlength="10"><br>
                     <label for="date">Date</label> <br>
-                    <input type="date" name="date" id="date" placeholder="date*" size="30" maxlength="10"></input><br>
+                    <input type="date" name="date" id="date" placeholder="date*" size="30" maxlength="10"><br>
                 </p>
             </form>
             <form id="mail_partynumber">
                 <p>
                     <label for="name">Name</label> <br> 
-                    <input type="email" name="email" id="your_email" placeholder="your email*" size="30" maxlength="10"></input><br>
+                    <input type="email" name="email" id="your_email" placeholder="your email*" size="30" maxlength="10"><br>
                     <label for="number">Party number</label><br>
-                    <input type="number" min="0" name="number" id="party_number" placeholder="party number"size="30" maxlength="10"></input><br>
+                    <input type="number" min="0" name="number" id="party_number" placeholder="party number"size="30" maxlength="10"><br>
                 </p>
             </form>
         </section>
@@ -175,6 +178,6 @@
                 </div>
             </footer>
             </body>
-</head>
+
 
 </html>
