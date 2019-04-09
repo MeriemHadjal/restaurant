@@ -16,7 +16,7 @@
 }
 
 /*@media only screen and (max-width: 600px){ }
-@media only screen and (min-width: 600px){}
+@media only screen and (min-width: 601px){}
 @media only screen and (min-width : 768px){}
 @media only screen and (min-width : 992px){}
 @media only screen and (min-width: 1200px){}
@@ -27,6 +27,8 @@
             background-color: lightblue;
         }
 }*/
+
+
 
 body{
     // width:100vw;
@@ -45,22 +47,56 @@ body{
         background-image: url("../pictures/bg_header.jpg");
         background-repeat: no-repeat;
         background-size:cover; //100% 100% voir pour le responsive
+        // background-attachment: fixed; les autres sections passent au dessus
         width: 100vw;
         // height: 100vh;
         //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
         //height:auto *
         min-height: 750px;
 
+        @media only screen and (max-width: 600px){ 
+        
+        width:100vw;
+        height: auto;
+
+        }        
+        
+        @media only screen and (min-width: 601px){
+            width:100%;
+            height: auto;
+
+        }
+
+
+        @media only screen and (min-width : 768px){
+            width:100%;
+            height: auto;
+        }
+
         #back_header{
                     background: linear-gradient(0deg,rgba(255,255,255,0),rgba(0,0,0,0.5));                
                     //z-index:1; //entre le background et l'image
                     position:fixed;
                     width: 100vw;
+
+                    @media only screen and (min-width: 601px){
+                        width:100%;
+                        height: auto;
+            
+                    }
+
+                    
             nav {
                 margin-left: 10%;
                 margin-right: 10%;
                 display: flex;
                 justify-content: space-around;
+
+                @media only screen and (max-width: 601px){ 
+                    margin:2%;
+
+                }
+                
 
 
                     #navbar {
@@ -73,19 +109,28 @@ body{
 
                             li{
                                 
-                                margin-right: 10px;
-                                margin-left: 10px;
+                                margin-right: 80px;
+                                @media only screen and (max-width: 601px){ 
+                                    margin:0px;
+                                }
+                                
                                 a{
                                     text-decoration: none;
                                     color: white;
-                                font-family: "Gentium Book Basic";
-                                font-size: 21px;
-                                font-weight: 700;
+                                    font-family: "Gentium Book Basic";
+                                    font-size: 21px;
+                                    font-weight: 700;
                                 }
+                                
+                                a:hover{
+                                border-top: 3px solid whitesmoke;
+                                padding-top:8px;
+                                }
+                                
                                 .socials_icons{
                                     color:rgb(218,179,62);
                                 }
-                            }
+                                }
                         }
                     }
                 }
@@ -96,7 +141,7 @@ body{
                 text-align:center;
                 padding-left:10%;
                 padding-right:10%;
-                padding-top: 30px;
+                padding-top: 150px;
                 padding-bottom: 30px;
                 h1{
                     font-family:"YesevaOne";
@@ -110,7 +155,7 @@ body{
                     margin-left:auto;
                     margin-right: auto;
                     padding-top:15px;
-                    padding-bottom:20px;
+                    padding-bottom:50px;
                 }
                 
                 .booking{
@@ -149,14 +194,7 @@ body{
 
                 //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
                 //height:auto *
-                // padding: 0 10%;
-                // border: 2px solid yellow;
-               
-                // #help2{
-                // min-height: 700px;
-                // border: 1px solid pink;
-                // display: flex;
-                // flex-direction: row;
+                
 
                 
                 #cook{
@@ -191,6 +229,11 @@ body{
                     //padding-right:25%;
                     width: 50%;
                     text-align: center;
+
+                    @media only screen and (max-width: 601px){ 
+                    
+                        width:80%;
+                            }
             }
                     #chef{
                 display:flex;
@@ -202,15 +245,23 @@ body{
                     #plate{
                 display:flex;
                 justify-content:center;
+                // box-shadow: 12px 12px 2px 1px rgba(0,0,0,0.5);
                 width:40%;
                 // margin-right:15%;
+
+
+                // @media only screen and (max-width: 601px){ 
+                    
+                    // display:none;
+                        }
             }
-        // }
+        
         }
             #ingredient{
                 background-image: url(../pictures/bg_ingredient.jpg);
                 background-repeat: no-repeat;
                 background-size:cover; //100% 100% voir pour le responsive
+                background-attachment: fixed;
                 width: 100vw;
                 height: 100vh;
                 //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
@@ -264,11 +315,12 @@ body{
                 }
             }
         }
-        }
+        
         #reviews{
             background-image: url("../pictures/bg_reviews.jpg");
             background-repeat: no-repeat;
             background-size:cover; //100% 100% voir pour le responsive
+            background-attachment: fixed;
             width: 100vw;
             height: 100vh;
             //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
@@ -326,14 +378,245 @@ body{
             height: 100vh;
             //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
             //height:auto 
+            display: flex; //dans chaque grande section
+            flex-direction: row; /*dans chaque grande section*/
+            align-items: center; /*dans chaque grande section*/
+            justify-content: center; /*dans chaque grande section*/
         
         #right_food_pic{
             width:50%;
-            margin-right:10px;
-            margin-left:10px;
+        //     margin-right:10px;
+        //     margin-left:10px;
+            display:flex;
+            justify-content:center;
+
+            #meat{
+                padding-right:1.5%;
+            }
+
+            #dessert{
+                padding-left:1.5%;
+            }
+
+            // @media only screen and (min-width: 601px){
+            //     display:none;
+    
+            // }
         }
         #reservation{
+            width:50%;
+            // border:1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            h2{  
+                font-family:"YesevaOne";
+                font-size: 36px;
+                color:rgb(202,153,44);
+                // text-align:center;
+            }
+            
+        #divider2{
+            display: block;
+            // margin-left:auto;
+            // margin-right: auto;
+            padding-top:15px;
+        }
+
+        p{
+            font-family:"Lato";
+            font-size: 16px;
+            color:black;
+            text-align:center;
+            // padding:10%;
+            width:50%;
+        }
+        
+    form { 
+        display: flex;
+        flex-direction: row;
+
+        #formulaire{
+            font-family:"OpenSans";
+            font-size:14px;
+            color:rgb(202,153,44);
+        
+        }
+        #name_date{
+            font-family:"OpenSans";
+            font-size:14px;
+            color:rgb(202,153,44);
+            margin-right: 10%;
+        }
+
+
+        #party_number{
+            font-family:"OpenSans";
+            font-size:14px;
+            color:rgb(202,153,44);
+                    }
+        }
+        .submit {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-top: 10%;
+
+            input {
+                color: white;
+                font-family: 'OpenSans';
+                font-size: 16px;
+                background-color: #c9a131;
+                border: none;
+                padding: 7px 30px;
+            }
+        }
+    
+
+            }
+        }
+    
+        footer{
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size:cover; //100% 100% voir pour le responsive
+            width: 100vw;
+            min-height: 320px;
+            //width:100% *  ces  2 valeurs permettent à l'image d'être responsive
+            //height:auto 
+            // display: flex; //dans chaque grande section
+            // flex-direction: row; /*dans chaque grande section*/
+            // align-items: center; /*dans chaque grande section*/
+            justify-content: space-around; /*dans chaque grande section*/
+            color:white;
+            // padding:0 10%;
+        
+        #contener_footer{
+            display:flex;
+            justify-content:space-around;
+            align-items: center;
+            min-height: 320px;
             
         }
-    }
-    
+        .divider_footer{
+                display: block;
+                margin-left:auto;
+                margin-right: auto;
+                padding-top:15px;
+            }
+
+        #about_us{
+            width:33%;
+            h3{
+                text-align:center;
+                font-family:"YesevaOne";
+                font-size:21px;
+            }
+
+            p{
+                text-align:center;
+                font-family:"OpenSans";
+                font-size:16px;
+                span{
+                    font-weight: bold;
+                }
+            }
+            
+        }
+
+        #opening_hours{
+            width:33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // border:1px solid white;
+            h3{
+                text-align:center;
+                font-family:"YesevaOne";
+                font-size:21px;
+            }
+
+            ol{
+                // padding-right:7%;
+                // text-align:center;
+                padding-inline-start: 0px;
+                li{
+                    list-style-type: none;
+                    font-family: "OpenSans";
+                    font-size:16px;
+                    // border:1px solid white;
+                    span{
+                        font-weight:bold;
+                    }
+                    // #card{
+                    //     display:flex;
+                    //     justify-content: center;
+                    // }
+            }
+        }
+            ul{
+
+                //  border:1px solid white;
+                    display:flex;
+                    justify-content:space-between;
+                    list-style-type: none;
+                    font-size:16px;
+                    padding-right:7%;
+                    // width:60%;
+                    width:25%;
+                    a{
+                        color:white;
+                    }
+                }
+            
+        }
+
+        #our_location{
+            // border: 2px solid white;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            width:33%;
+            // width:17%;
+            h3{
+                text-align:center;
+                font-family:"YesevaOne";
+                font-size:21px;
+            }
+
+            ul{ 
+                padding-inline-start: 0px;
+                list-style-type:none;
+                
+                li{
+                    text-align: center;
+                    // padding-right:20%;
+                    list-style-type: none;
+                    font-family: "OpenSans";
+                    font-size:16px;
+                    font-weight:bold;
+                    width:100%;
+                    }
+            }
+
+            #socials_icons_2{
+                width: 25%;
+                
+                
+                ul{
+                display:flex;
+                justify-content:space-between;
+                font-size: 16px;
+                padding-inline-start: 0px;
+                list-style-type:none;
+
+                i{
+                    color:white;
+                                    }
+            }
+        }
+        }
+        }
